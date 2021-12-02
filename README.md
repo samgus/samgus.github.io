@@ -6,7 +6,7 @@ We want to test how often NYC parks receives maintenance depending on where they
 
 ### What is this significant?
 
-Parks are so valuable and enrich the lives of so many New Yorkers. There’s nothing like being in a beautiful park that is very well taken care of.
+Parks are so valuable and enrich the lives of so many New Yorkers. There’s nothing like being in a beautiful park that is very well taken care of. It is important to solve this problem because there are parks in New York that are not properly taken care of and they are so important to our mental health to be in a nice, peaceful, and clean environment. From kids to adults, everyone needs nice quality parks accessible to them, no matter where in New York City they live.
 
 ### Links:
 - [Open NYC Data](https://data.cityofnewyork.us/City-Government/ARCHIVED-Parks-Properties/k2ya-ucmv)
@@ -15,23 +15,19 @@ Parks are so valuable and enrich the lives of so many New Yorkers. There’s not
 
 ### Import Libraries:
 ```markdown
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import geoplotlib as geoplot
-
 ```
 ### User Inputs:
 ```markdown
-
 #Get input and output file names:
 inFile = input('Enter input file name: ')
 inFile2 = input('Enter input file name: ')
 inFile3 = input('Enter input file name: ')
 outFile = input('Enter output file name: ')
-
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
