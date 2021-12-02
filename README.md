@@ -33,21 +33,13 @@ Syntax highlighted code block
 ```
 ### User Inputs:
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+#Get input and output file names:
+inFile = input('Enter input file name: ')
+inFile2 = input('Enter input file name: ')
+inFile3 = input('Enter input file name: ')
+outFile = input('Enter output file name: ')
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
