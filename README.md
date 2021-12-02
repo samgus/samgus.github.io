@@ -4,9 +4,9 @@ You can use the [editor on GitHub](https://github.com/samgus/samgus.github.io/ed
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### What is the project about?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We want to test how often NYC parks receives maintenance depending on where they are built, what borough they are in, and that show when the park was built, what borough it is in, and when the last time they received maintenance. 
 
 ```markdown
 Syntax highlighted code block
