@@ -15,21 +15,13 @@ Parks are so valuable and enrich the lives of so many New Yorkers. There’s not
 
 ### Import Libraries:
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+import geoplotlib as geoplot
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 ### User Inputs:
 ```markdown
