@@ -13,7 +13,25 @@ Parks are so valuable and enrich the lives of so many New Yorkers. There’s not
 [Open NYC Data](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
 [NYC Council Data](https://council.nyc.gov/data/parks-in-nyc/)
 
+### Import Libraries:
+```markdown
+Syntax highlighted code block
 
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+### User Inputs:
 ```markdown
 Syntax highlighted code block
 
