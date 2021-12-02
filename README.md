@@ -9,9 +9,9 @@ We want to test how often NYC parks receives maintenance depending on where they
 Parks are so valuable and enrich the lives of so many New Yorkers. There’s nothing like being in a beautiful park that is very well taken care of.
 
 ### Links:
-[Open NYC Data](https://data.cityofnewyork.us/City-Government/ARCHIVED-Parks-Properties/k2ya-ucmv)
-[Open NYC Data](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
-[NYC Council Data](https://council.nyc.gov/data/parks-in-nyc/)
+- [Open NYC Data](https://data.cityofnewyork.us/City-Government/ARCHIVED-Parks-Properties/k2ya-ucmv)
+- [Open NYC Data](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
+- [NYC Council Data](https://council.nyc.gov/data/parks-in-nyc/)
 
 ### Import Libraries:
 ```markdown
