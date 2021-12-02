@@ -31,6 +31,6 @@ outFile = input('Enter output file name: ')
 ```
 ### Reading in files to the DataFrame:
 ```markdown
-#Get input and output file names:
+#Reading selected file to df:
 df = pd.csv_read(inFile)
 ```
