@@ -36,12 +36,14 @@ def convertMoney(col):
 ```
 ### Organizing the data:
 ```markdown
-df = df[['Sign Name','Borough Code','Sector Desc.','Q1WorkOrderCost','Q2WorkOrderCost','Q3WorkOrderCost','Q4WorkOrderCost']].dropna()
+df = df[['Sign Name','Borough Code','Sector Desc.','Q1WorkOrderCost',
+'Q2WorkOrderCost','Q3WorkOrderCost','Q4WorkOrderCost']].dropna()
 df = df[df["Sign Name"] != 'Park']
 df = convertMoney('Q1WorkOrderCost')
 df = convertMoney('Q2WorkOrderCost')
 df = convertMoney('Q3WorkOrderCost')
 df = convertMoney('Q4WorkOrderCost')
-df['Total Spending'] = (df['Q1WorkOrderCost'] + df['Q2WorkOrderCost'] + df['Q3WorkOrderCost'] + df['Q4WorkOrderCost'])
+df['Total Spending'] = (df['Q1WorkOrderCost'] + df['Q2WorkOrderCost'] + 
+df['Q3WorkOrderCost'] + df['Q4WorkOrderCost'])
 ```
 Now, we are organzing the data from the orginal csv that we pulled to use for our purposes. Notice that now we have a column 'Total Spending' so we can easily see which parks are recieving adequate funding for maintainence.
