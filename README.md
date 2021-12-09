@@ -92,6 +92,7 @@ ax.set_yticklabels(y, fontsize=8)
 ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
+![Brooklyn Data](Brooklyn.png)
 ```markdown
 #MANHATTAN
 man_df = man_df.groupby('ZIPCODE').sum().sample(25).reset_index()
