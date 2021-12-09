@@ -167,7 +167,7 @@ ax.set_yticklabels(y, fontsize=8)
 ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
-![Bronx Data](Bronx.png)
+![Bronx Data](The Bronx.png)
 ```markdown
 #STATEN ISLAND
 staten_df = staten_df.groupby('ZIPCODE').sum().sample(5).reset_index()
