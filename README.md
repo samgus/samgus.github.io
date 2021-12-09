@@ -22,7 +22,9 @@ import geoplotlib as geoplot
 ### User Inputs:
 ```markdown
 #Get input and output file names:
-df = pd.read_csv('nycParkFunding2020.csv')
+df1 = pd.read_csv('parksProperties.csv')
+df2 = pd.read_csv('nycParkFunding2020.csv')
+df3 = pd.read_csv('parkZones.csv')
 outFile = input('Enter output file name: ')
 ```
 ### Making a Function convertMoney():
@@ -36,14 +38,26 @@ def convertMoney(col):
 ```
 ### Organizing the data:
 ```markdown
-df = df[['Sign Name','Borough Code','Sector Desc.','Q1WorkOrderCost',
+#For the 1st Dataframe
+df1 = df1[['ACQUISITIONDATE','LOCATION','Sign Name','multipolygon']].dropna()
+df1['ACQUISITIONDATE'] = df1['ACQUISITIONDATE'].apply(lambda x: x.replace(' 00:00:00.0000000','')) #striping the string of zeros
+df1 = df1[df1["Sign Name"] != 'Park']
+```
+```markdown
+#For the 2nd Dataframe
+df2 = df2[['Sign Name','Borough Code','Sector Desc.','Q1WorkOrderCost',
 'Q2WorkOrderCost','Q3WorkOrderCost','Q4WorkOrderCost']].dropna()
-df = df[df["Sign Name"] != 'Park']
-df = convertMoney('Q1WorkOrderCost')
-df = convertMoney('Q2WorkOrderCost')
-df = convertMoney('Q3WorkOrderCost')
-df = convertMoney('Q4WorkOrderCost')
-df['Total Spending'] = (df['Q1WorkOrderCost'] + df['Q2WorkOrderCost'] + 
-df['Q3WorkOrderCost'] + df['Q4WorkOrderCost'])
+df2 = df2[df2["Sign Name"] != 'Park']
+df2 = convertMoney('Q1WorkOrderCost')
+df2 = convertMoney('Q2WorkOrderCost')
+df2 = convertMoney('Q3WorkOrderCost')
+df2 = convertMoney('Q4WorkOrderCost')
+df2['Total Spending'] = (df2['Q1WorkOrderCost'] + df2['Q2WorkOrderCost']
+ + df2['Q3WorkOrderCost'] + df2['Q4WorkOrderCost'])
+```
+```markdown
+#Combining them into one dataframe to analyze
+df = pd.merge(df1, df2)
+df.to_csv(outFile)
 ```
 Now, we are organzing the data from the orginal csv that we pulled to use for our purposes. Notice that now we have a column 'Total Spending' so we can easily see which parks are recieving adequate funding for maintainence.
