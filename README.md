@@ -117,6 +117,7 @@ ax.set_yticklabels(y, fontsize=8)
 ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
+![Manhattan Data](Manhattan.png)
 ```markdown
 #QUEENS
 queens_df = queens_df.groupby('ZIPCODE').sum().sample(25).reset_index()
@@ -141,30 +142,7 @@ ax.set_yticklabels(y, fontsize=8)
 ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
-```markdown
-#QUEENS
-queens_df = queens_df.groupby('ZIPCODE').sum().sample(25).reset_index()
-queens_df.sort_values('Total Spending', ascending = True, inplace= True)
-
-x = queens_df['ZIPCODE']
-y = queens_df['Total Spending']
-x_pos = [i for i, _ in enumerate(x)]
-fig, ax = plt.subplots(figsize=(8,7))
-
-plt.bar(x_pos, y, color='green')
-font1 = {'family':'serif','color':'green','size':20}
-font2 = {'family':'serif','color':'brown','size':15}
-plt.title("Queens", fontdict = font1)
-plt.xlabel("Park Zip Codes",fontdict = font2)
-plt.ylabel("Maintainance Funding", fontdict = font2)
-plt.xticks(x_pos, x)
-plt.xticks(rotation=45)
-# change the fontsize
-ax.set_xticklabels(x, fontsize=6)
-ax.set_yticklabels(y, fontsize=8)
-ax.yaxis.set_major_formatter("${x:,.2f}")
-plt.show()
-```
+![Queens Data](Queens.png)
 ```markdown
 #THE BRONX
 bronx_df = bronx_df.groupby('ZIPCODE').sum().sample(25).reset_index()
@@ -189,6 +167,7 @@ ax.set_yticklabels(y, fontsize=8)
 ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
+![Bronx Data](Bronx.png)
 ```markdown
 #STATEN ISLAND
 staten_df = staten_df.groupby('ZIPCODE').sum().sample(5).reset_index()
@@ -213,3 +192,4 @@ ax.set_yticklabels(y, fontsize=8)
 ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
+![Staten Island Data](Staten Island.png)
