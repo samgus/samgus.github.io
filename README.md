@@ -9,7 +9,8 @@ We want to test how often NYC parks receives maintenance depending on where they
 Parks are so valuable and enrich the lives of so many New Yorkers. There’s nothing like being in a beautiful park that is very well taken care of. It is important to solve this problem because there are parks in New York that are not properly taken care of and they are so important to our mental health to be in a nice, peaceful, and clean environment. From kids to adults, everyone needs nice quality parks accessible to them, no matter where in New York City they live.
 
 ### Links:
-[Open NYC Data for Park Maintainance (2020)](https://www.nycgovparks.org/news/archive)
+- [Open NYC Data for Park Maintainance (2020)](https://www.nycgovparks.org/news/archive)
+- [Open NYC Data for Park Properties](https://data.cityofnewyork.us/Recreation/Parks-Properties/enfh-gkve)
 
 ### Import Libraries:
 ```markdown
