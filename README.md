@@ -26,7 +26,8 @@ outFile = 'samG_project.csv'
 ```
 ### Making a Function convertMoney():
 ```markdown
-#We want to get to the sum of quarterly funding for NYC parks, so we have to converts the strings into floats.
+#We want to get to the sum of quarterly funding for NYC parks, 
+#so we have to converts the strings into floats.
 def convertMoney(col):
     df[col] = df[col].apply(lambda x: x.replace('$','')) #striping dollar sign
     df[col] = df[col].apply(lambda x: x.replace(',','')) #striping comma
