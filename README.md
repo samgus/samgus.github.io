@@ -2,7 +2,7 @@
 ![City Hall Park Image](City Hall Park 2.jpg)
 ### What is the project about?
 
-We want to test how often NYC parks receives maintenance depending on where they are built, what borough they are in, and that show when the park was built, what borough it is in, and when the last time they received maintenance.
+We want to test how much funding NYC parks receives maintenance depending on what borough they are in and what zipcode they are in within that borough.
 
 ### What is this significant?
 
