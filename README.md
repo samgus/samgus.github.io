@@ -1,5 +1,5 @@
 ## NYC Park Maintenance
-![City Hall Park Image](City Hall Park.png)
+![City Hall Park Image](City Hall Park.jpg)
 ### What is the project about?
 
 We want to test how often NYC parks receives maintenance depending on where they are built, what borough they are in, and that show when the park was built, what borough it is in, and when the last time they received maintenance.
