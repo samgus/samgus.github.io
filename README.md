@@ -69,8 +69,8 @@ staten_df = df.loc[(df['Borough Code'] == 'R') & (df['ZIPCODE'].str.len() <= 5),
 ```markdown
 plt.style.use('ggplot')
 ```
+### Brooklyn:
 ```markdown
-#BROOKLYN
 bk_df = bk_df.groupby('ZIPCODE').sum().sample(25).reset_index()
 bk_df.sort_values('Total Spending', ascending = True, inplace= True)
 
@@ -94,8 +94,8 @@ ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
 ![Brooklyn Data](Brooklyn.png)
+### Manhattan:
 ```markdown
-#MANHATTAN
 man_df = man_df.groupby('ZIPCODE').sum().sample(25).reset_index()
 man_df.sort_values('Total Spending', ascending = True, inplace= True)
 
@@ -119,8 +119,8 @@ ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
 ![Manhattan Data](Manhattan.png)
+### Queens:
 ```markdown
-#QUEENS
 queens_df = queens_df.groupby('ZIPCODE').sum().sample(25).reset_index()
 queens_df.sort_values('Total Spending', ascending = True, inplace= True)
 
@@ -144,8 +144,8 @@ ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
 ![Queens Data](Queens.png)
+### The Bronx:
 ```markdown
-#THE BRONX
 bronx_df = bronx_df.groupby('ZIPCODE').sum().sample(25).reset_index()
 bronx_df.sort_values('Total Spending', ascending = True, inplace= True)
 
@@ -169,8 +169,8 @@ ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
 ![The Bronx Data](The Bronx.png)
+### Staten Island:
 ```markdown
-#STATEN ISLAND
 staten_df = staten_df.groupby('ZIPCODE').sum().sample(5).reset_index()
 staten_df.sort_values('Total Spending', ascending = True, inplace= True)
 
@@ -194,3 +194,12 @@ ax.yaxis.set_major_formatter("${x:,.2f}")
 plt.show()
 ```
 ![Staten Island Data](Staten Island.png)
+
+### Discoveries:
+It is clear that there is a huge disparity in funding that each park in NYC receives depending on their zip code, and borough. I didn’t think the difference would be so significant, but when you look are the charts on my website, you can clearly see that some of these parks in certain zip codes are in serious need of funding.
+
+### Conclusion:
+It is has become very apparent since Covid-19 that people’s mental health relies heavily on community, going outside, and finding somewhere where they feel safe and unfortunately, there are some parks that are not receiving as much attention in other zip codes. If we can fix this problem, we can improve the mental health of thousands of New Yorkers.
+
+
+
