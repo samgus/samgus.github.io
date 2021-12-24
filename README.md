@@ -57,7 +57,7 @@ df2['Total Spending'] = (df2['Q1WorkOrderCost'] + df2['Q2WorkOrderCost']
 #Combining them into one dataframe to analyze
 df = pd.merge(df1, df2)
 ```
-Now, we are organzing the data from the orginal csv that we pulled to use for our purposes. Notice that now we have a column 'Total Spending' so we can easily see which parks are recieving adequate funding for maintainence.
+Now, we are organizing the data from the orginal csv that we pulled to use for our purposes. Notice that now we have a column 'Total Spending' so we can easily see which parks are recieving adequate funding for maintainence.
 ```markdown
 #Individual borough dataframes
 man_df = df.loc[(df['Borough Code'] == 'M') & (df['ZIPCODE'].str.len() <= 5), :]
@@ -196,10 +196,10 @@ plt.show()
 ![Staten Island Data](Staten Island.png)
 
 ### Discoveries:
-It is clear that there is a huge disparity in funding that each park in NYC receives depending on their zip code, and borough. I didn’t think the difference would be so significant, but when you look are the charts on my website, you can clearly see that some of these parks in certain zip codes are in serious need of funding.
+It is clear that there is a huge disparity in funding that each park in NYC receives depending on their zip code, and borough. I didn’t think the difference would be so significant, but when you look at the charts, you can clearly see that some of these parks in certain zip codes are in serious need of funding.
 
 ### Conclusion:
-It is has become very apparent since Covid-19 that people’s mental health relies heavily on community, going outside, and finding somewhere where they feel safe and unfortunately, there are some parks that are not receiving as much attention in other zip codes. If we can fix this problem, we can improve the mental health of thousands of New Yorkers.
+It has become very apparent since Covid-19 that people’s mental health relies heavily on community, going outside, and finding somewhere where they feel safe and unfortunately, there are some parks that are not receiving as much attention in other zip codes. If we can fix this problem, we can improve the mental health of thousands of New Yorkers.
 
 
 
